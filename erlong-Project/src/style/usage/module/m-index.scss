@@ -1,0 +1,152 @@
+.m-index {
+  @include flexbox();
+  @include flex-direction(column);
+  height: 100%;
+  .header {
+    height: .44rem;
+    position: fixed;
+    top:0;
+    width:100%;
+    .yo-header-a{
+      width:100%;
+      display: flex;
+      background: rgba(255,255,255,0.9);
+    }
+    .title{
+      font-weight: normal;
+      flex:1;
+      overflow: initial;
+    }
+    .leftico {
+      width:1rem;
+    }
+    .rightico {
+      width:1rem;
+      right: 0;
+      left: auto;
+      color:#000
+    }
+  }
+  section {
+    overflow: auto; 
+    flex: 1;
+    background: #fff;
+      header{
+        height: .44rem;
+        width:100%;
+        .yo-header-a{
+          width:100%;
+          display: flex;
+          border-bottom: 1px solid #e0e0e0;
+        }
+        .title{
+          font-weight: normal;
+          flex:1;
+          overflow: initial;
+        }
+        .leftico {
+          width:1rem;
+        }
+        .rightico {
+          width:1rem;
+          right: 0;
+          left: auto;
+          color:#000
+        }
+      }
+      .searchMes{
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 10.67px;
+        height: .44rem;
+        border-bottom: 1px solid #eee;
+        .searchMain{
+            display: flex;
+            flex: 1 0;
+            align-items: center;
+            border-radius: .4rem;
+            padding:0 .08rem;
+            background: #eee;
+            font-weight: 400;
+            font-size: .14rem;
+            line-height: 1.42857; 
+            a{ 
+                display: flex;
+                i{
+                    padding-right: .06rem;
+                    line-height: .33rem;
+                    color:#aaa;
+                }
+                .hotInput{
+                    padding-left: .08rem;
+                    width: 92%;
+                    height: .31rem;
+                    line-height: .18rem;
+                    display: block;
+                    padding-top: 2px;
+                    color: #111;
+                    vertical-align: middle;
+                    font-size: 14px;
+                    border: 0;
+                    background: #eee;
+                }
+            }
+        }
+      }  
+    .yo-multilist{
+        height:4.3rem;
+        .scroller{
+            font-size: .13rem;
+            ul.yo-list{
+
+              li.item{
+
+              }
+            }
+          } 
+      }
+    
+  }
+  footer {
+    height: .5rem;
+    background: #fff;
+    border-top:1px solid #e0e0e0;
+    @include border(1px 0 0 0, #fff);
+    ul {
+      width: 100%;
+      height: 100%;
+      @include flexbox();
+      li {
+        @include flex();
+        &:first-child i {
+          margin-top: .08rem;
+        }
+        a {
+          height: 100%;
+          @include flexbox();
+          @include flex-direction(column);
+          @include align-items(center);
+          @include justify-content(center);
+          i, b {
+            color: rgba(0, 0, 0, 0.7)
+          }
+          i {
+            font-size: .25rem;
+            line-height: .25rem;
+          }
+          b {
+            font-weight: normal;
+            font-size: .12rem;
+            // @include transform(scale(0.5));
+          }
+          &.active i,
+          &.active b {
+            font-weight: bold;
+            color: rgba(0, 144, 242, 1)
+          }
+        }
+      }
+    }
+  }
+}

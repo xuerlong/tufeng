@@ -1,0 +1,81 @@
+.search-main{
+    height:100%;
+    background: #fff;
+    @include flexbox();
+    @include flex-direction(column);
+    .search-header{
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 10.67px;
+        overflow: hidden;
+        height: .44rem;
+        border-bottom: 1px solid #e3e3e3;
+        label{
+            width:80%;
+            margin: -1px;
+            border: 1px solid #e3e3e3;
+            border-radius: 30px;
+            padding-right: 8px;
+            padding-left: 8px;
+            background: #eee;
+            i{
+                padding-right: .06rem;
+                color: #aaa;
+            }
+            input{
+                background: 0 0;
+                height: 30px;
+                font-size: 14px;
+                border: 0;
+            }
+        }
+        .btn{
+            border-color: transparent;
+            padding: 0 12px;
+            min-width: 52px;
+            font-size: 16px;
+            background: #fff;
+        }
+    }
+    section{
+        flex: 1;
+        .row{
+            width: 100%;
+            display: flex;
+            padding: 5px;
+            height: .56rem;
+            .col{
+                height: .46rem;
+                flex: 1;
+                display: block;
+                padding: 5px;
+                h5{
+                    font-size: .15rem;
+                }
+            }
+        }
+        .hot-search{
+            width: 100%;
+            margin-top: -12px;
+            padding-top: 0;
+            display: flex;
+            padding: 5px;
+            .col{
+                flex: 1;
+                display: block;
+                padding: 0px 14px;
+                .button-calm{
+                    display: inline-block;
+                    border-radius: 20px;
+                    margin: 10px 10px 0 0;
+                    float: left;
+                    color: #0090F0;
+                    padding: 5px 10px;
+                    border: 1px solid #0090F0;
+                    
+                }
+            }
+        }
+    }
+}

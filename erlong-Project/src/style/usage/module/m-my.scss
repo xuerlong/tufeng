@@ -1,0 +1,90 @@
+.m-my{
+    height:100%;
+    background: #f3f3f7;
+    .my-header {
+        height: 1.93rem;
+        padding: 4%;
+        background-color: #0090F2;
+        text-align: center;
+        background-size: 100% 100%;
+        background-image:url('../../src/image/background.png');
+        .tips{
+            color: #fff;
+            font-size: .24rem;
+            padding-bottom: .1rem;
+        }
+        .user-layout{
+            background-color: #fff;
+            border-radius: 50%;
+            height: .8rem;
+            width: .8rem;
+            margin: 0 auto;
+            line-height: .8rem;
+            .icon-user{
+                color: #0090f2;
+                font-size: .4rem;
+                margin-left:.12rem;
+            }
+        }
+        .login{
+            color: #fff;
+            padding-top: 5px;
+            font-size: 14px;
+        }
+    }
+    
+    .my-navs{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        background-color: #FFF;
+        margin-bottom: .1rem;
+        border-bottom: 1px solid #f3f3f7;
+        height: .72rem;
+        .nav-item{
+            flex: 1;
+            padding-top: .1rem;
+            text-align: center;
+            position: relative;
+            height: .72rem;
+            a{
+                i{
+                    display: inline-block;
+                    margin-bottom: -0.04rem;
+                    font-size: .24rem;
+                }
+                p{
+                    margin:0 0 .1rem;
+                    font-size: .14rem;
+                }
+            }
+        }
+    }
+    
+    .user-content{
+        margin-top: .25rem;
+        background-color: #fff;
+        margin-bottom: .1rem;
+        padding: 0;
+        h2.clipboard{
+            border-bottom: 1px solid #F3F3F7;
+            font-size: .16rem;
+            margin: 0 .1rem;
+            padding: .1rem;
+            font-weight: normal;
+            .icon-left{
+                color: #0090f2;
+                margin-right: .1rem;
+                font-size: .3rem;
+                vertical-align: middle;
+            }
+            .icon-right{
+                float: right;
+                margin-top: .04rem;
+                font-size: .22rem;
+                color:#999;
+            }
+        }
+    }
+}

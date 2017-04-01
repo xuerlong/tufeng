@@ -14,7 +14,7 @@ import Quality from './component/home/quality'
 import Star from './component/home/star'
 import Time from './component/home/timeLimit'
 
-import Hot from './component/degital/hot'
+import Hot from './component/menu/hot'
 import List from './component/degital/list'
 
 import SearchMain from './component/degital/searchMain'

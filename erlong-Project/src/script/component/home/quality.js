@@ -26,14 +26,14 @@ class Quality extends React.Component {
 				return res.json()
 			})
 			.then((res) => {
-				console.log(res.data)
+//				console.log(res.data)
 				var reg = /^\d+/g;
 				var imgList = res.data.recommend_products[0].products_info.map(function(item,index){
-					console.log(item.image)
+//					console.log(item.image)
 					//http://dn-toursforfun.qbox.me/images/
 					if(reg.test(item.image)){
 						item.image = 'http://dn-toursforfun.qbox.me/images/'+item.image;
-						console.log(item.image)
+//						console.log(item.image)
 					}
 					return (
 						<a className="product-item">
@@ -60,7 +60,7 @@ class Quality extends React.Component {
 							</div>
 						</a>
 					)
-					console.log(item.image)
+//					console.log(item.image)
 				})
 				this.setState({
 					list: imgList

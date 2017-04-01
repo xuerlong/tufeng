@@ -37,7 +37,9 @@ class Board extends React.Component {
 			<div className="m-board">
 		      	<div className="header" >
 			      <div className="yo-header yo-header-a">
-			      	<p className="leftico iconfont">&#xe63f;</p>
+			      	<Link to="/searchMain" className="leftico">
+			      		<p className="iconfont">&#xe63f;</p>
+			      	</Link>
 			        <h2 className="title">首 页</h2>
 			        <span className="rightico iconfont" onClick={this.handleWheel}>&#xe620;</span>
 			      </div>
@@ -66,14 +68,14 @@ class Board extends React.Component {
 		        			<div className="home-nav"></div>
 		        			<h4 className="title">一日游</h4>
 		        		</Link>
-		        		<a className="home-kind">
+		        		<Link to="hot/3?search=ticket" className="home-kind">
 		        			<div className="home-nav"></div>
 		        			<h4 className="title">票务</h4>
-		        		</a>
-		        		<a className="home-kind">
+		        		</Link>
+		        		<Link to="hot/4?search=customPackageHome" className="home-kind">
 		        			<div className="home-nav"></div>
 		        			<h4 className="title">定制包团</h4>
-		        		</a>
+		        		</Link>
 		        	</div>
 		        	<div className="row row2">
 		        		<a className="home-kind">
@@ -150,7 +152,18 @@ class Board extends React.Component {
 				console.log(e.message)
 			})
 	}
+//	componentDidUpdate() {
+//  let title = this.props.routes[1].title
+//  this.props.onChange({
+//    type: 'SETTITLE',
+//    title: title
+//  })
+//}
 
 }
 
 export default Board
+//export default connect(
+//mapStateToProps,
+//mapDispatchToProps
+//)(Index) 
